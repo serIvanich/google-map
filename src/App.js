@@ -33,6 +33,7 @@ const App = () => {
     <div>
       <div className={s.addressSearchContainer}>
         <Autocomplete isLoaded={isLoaded} onSelect={onPlaceSelect}/>
+        <button className={s.modeToggle}>set markers</button>
       </div>
       {isLoaded ? <Map center={center} /> : <h3>loading</h3>}
     </div>
